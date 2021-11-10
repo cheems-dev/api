@@ -79,7 +79,7 @@ Pagina web de C.C para la **_semana de la Computación_**
 
 ---
 
-Este proyecto está bajo la Licencia MIT
+Este proyecto está bajo la LICENCIA MIT
 
 ## **Expresiones de Gratitud 🎁**
 
