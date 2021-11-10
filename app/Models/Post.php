@@ -2,15 +2,17 @@
 
 namespace App\Models;
 
+use App\Traits\ApiTrait;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Post extends Model
 {
-    use HasFactory;
+    use HasFactory, ApiTrait;
     const PUBLISHED = 1;
     const MODERATION = 2;
 
+    protected $fillable = ['name', 'slug', 'extract', 'body', 'status', 'category_id', 'user_id'];
     // Relacion Inversa \ uno a muchos inversa
     public function user()
     {
